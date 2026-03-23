@@ -1,0 +1,19 @@
+# Dataset — too large for GitHub, download from VisDrone official site
+data/
+
+# Model weights
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Claude internal settings
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
