@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{AP@IoU\,=\,0.5 under adversarial attack by object size category on VisDrone val. AP\_S, AP\_M, AP\_L follow COCO-standard area thresholds ($<\!32^2$, $32^2$\,--\,$96^2$, $\geq\!96^2$\,px$^2$). $\downarrow$ from clean shown in parentheses.}
+\label{tab:ap_by_size}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+Attack & AP & AP\_S (small) & AP\_M (medium) & AP\_L (large) \\
+\midrule
+Clean & 39.8 & 11.9 & 38.7 & 27.6 \\
+FGSM_2 & 39.7 (+0.1) & 11.9 (+0.0) & 38.8 (-0.0) & 25.6 (+2.0) \\
+FGSM_4 & 39.6 (+0.1) & 11.8 (+0.1) & 39.2 (-0.5) & 25.9 (+1.7) \\
+FGSM_8 & 38.7 (+1.1) & 11.5 (+0.4) & 38.4 (+0.4) & 24.5 (+3.1) \\
+FGSM_16 & 34.0 (+5.8) & 9.3 (+2.6) & 34.7 (+4.1) & 21.2 (+6.4) \\
+PGD_8 & 39.5 (+0.3) & 11.7 (+0.2) & 39.1 (-0.4) & 26.4 (+1.2) \\
+PGD_16 & 38.2 (+1.6) & 11.3 (+0.6) & 37.9 (+0.8) & 23.3 (+4.3) \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
